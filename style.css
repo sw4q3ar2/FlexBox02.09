@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background:beige url('img/hatter.jpg');
+    color:black;
+}
+nav, footer {
+    background: cadetblue; 
+    padding:2px 5px;
+}
+nav ul{
+    padding:0;
+}
+nav ul li {
+    list-style-type: none; 
+    padding:0 15px;
+}
+nav a {
+    text-decoration: none;
+    color:#ffcc66
+}
+nav a:hover{
+    color:coral;
+}
+footer {
+    text-align:center;
+}
+
+
+.flexContainer {
+    display:flex;
+    flex-flow:row wrap; 
+}
+
+section {
+    flex:3 1 500px;
+    padding: 10px;
+    border:1px solid black;
+    border-radius:2px;
+    text-align:justify;
+}
+
+aside {
+    flex:1 1 200px;
+    padding:10px;
+    border:1px solid black;
+    border-radius:2px;
+}
+
+.flexEnd {
+    justify-content: flex-end;
+}
+.flexStart {
+    justify-content: flex-start;
+}
+
+.flexContainer{
+    justify-content: space-between; 
+}
+
+section { order:2;}
+.bal { order:1;}
+.jobb {order:3;}
+
+form{
+    width: 270px;
+}
+
+label{
+    display: block;
+    width: 100px;
+    padding: 0 5px 0 0;
+}
+
+@media screen and (max-width:500px) {
+    .flexContainer {   flex-flow:column wrap;    }
+    section { order:1;   }
+    .bal { order:2;  }
+    .jobb {  order:3;   }
+}
+
+

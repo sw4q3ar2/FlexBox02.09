@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnold</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <nav class="flexContainer">
+            <ul class="flexStart">
+                <li><a href="#">Home</a></li>
+            </ul>
+            <ul class="flexContainer flexEnd">
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <article class="flexContainer">
+            <section>
+                <div class="col">
+                    <h2>Elso tartalom</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sint tempora sapiente necessitatibus reprehenderit sequi possimus unde modi eaque laudantium repellat dolorum vero rerum libero, ad harum iusto voluptatibus minus?</p>
+                </div>
+                <div class="col">
+                    <h2>Masodik tartalom</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint atque, laborum ipsum perferendis tempora beatae velit soluta nisi eaque enim delectus omnis, ex deserunt tempore tenetur iste saepe, impedit optio.</p>
+                </div>
+                <h2>Adja meg az adatokat!</h2>
+                <form method="get" action="feldolgoz.php">
+                    <div class="flexContainer">
+                        <label>E-mail</label>
+                        <input name="email" >
+                    </div>
+                    <div class="flexContainer">
+                        <label>Felhasznalonev</label>
+                        <input name="fhnev">
+                    </div>
+                    <div class="flexContainer marginBottom">
+                        <label>Jelszo</label>
+                        <input type="password" name="password" >
+                    </div>
+                    <button class="entry">Submit</button>
+                </form>
+            </section>
+
+            <aside class="bal">
+                <h2>Bal oldali sav</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, cumque consectetur. Consequuntur voluptate temporibus quibusdam, iure molestiae porro architecto et magni repellendus beatae aperiam deleniti obcaecati deserunt nostrum ipsam perspiciatis!</p>
+            </aside>
+
+            <aside class="jobb">
+                <h2>Jobb oldali sav</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, ipsum sunt minima facere exercitationem laborum labore laudantium aliquid quaerat et consequatur totam magnam maxime temporibus soluta atque modi eaque aut!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolorem hic voluptate suscipit officia placeat ipsam nobis aperiam atque, sunt error commodi quae ea! Aliquid unde dicta reiciendis blanditiis fugiat.</p>
+            </aside>
+        </article>
+
+        <footer>Flex-box</footer>
+    </main>
+</body>
+</html>
